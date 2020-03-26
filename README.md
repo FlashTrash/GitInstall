@@ -43,10 +43,11 @@ http://udacity.github.io/git-styleguide/
 https://github.com/github/training-kit/blob/master/downloads/github-git-cheat-sheet.pdf
 
 # Common Comands
+git status						// shows which files have changed since the last commit
 git add fileName				// add file to the staging area
+git commit
 git init						// initialise a git repository
 git clone URL
-git status						// shows which files have changed since the last commit
 git log --stat					// stats about which files have changed in ea commit
 q								// quit, return to command line
 git diff commitIDx commitIDy
