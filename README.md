@@ -50,6 +50,8 @@ git init						// initialise a git repository
 git clone URL
 git log --stat					// stats about which files have changed in ea commit
 q								// quit, return to command line
+git diff						// diff between wrkng drctry files and staging area files
+git diff --staged				// diff between staging area files and repo files
 git diff commitIDx commitIDy
 git checkout commitIDy			// checkout previous commits if current head has a bug
 git checkout -b new_branch_name	// create a new branch
