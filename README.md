@@ -4,6 +4,28 @@
 Udacity - How to Use Git and GitHub
 https://classroom.udacity.com/courses/ud775
 
+# Common Comands:
+git status						// shows which files have changed since the last commit
+git add fileName				// add file to the staging area
+git commit
+git init						// initialise a git repo
+git clone URL
+git log --stat					// stats about which files have changed in ea commit
+q								// quit, return to command line
+git diff						// diff between wrkng dir files and staging area files
+git diff --staged				// diff between staging area files and repo files
+git diff commitIDx commitIDy
+git reset --hard				// discard any chnges in either wrkng dir or staging area
+git checkout commitIDy			// checkout previous commits if current head has a bug
+git checkout -b new_branch_name	// create a new branch
+git --version					// better to be >= 1.8
+
+# Git commit style guide:
+http://udacity.github.io/git-styleguide/
+
+# Git cheat sheet:
+https://github.com/github/training-kit/blob/master/downloads/github-git-cheat-sheet.pdf
+
 # Install Git using default options:
 https://git-scm.com/downloads
 	Probably best to select 'Use Windows' console window
@@ -36,23 +58,3 @@ Click in the top left corner of Git Bash to open the Console Windows Porperties.
 
 # Close and reopen Git Bash for changes to take effect.
 
-# Git commit style guide:
-http://udacity.github.io/git-styleguide/
-
-# Git cheat sheet:
-https://github.com/github/training-kit/blob/master/downloads/github-git-cheat-sheet.pdf
-
-# Common Comands
-git status						// shows which files have changed since the last commit
-git add fileName				// add file to the staging area
-git commit
-git init						// initialise a git repository
-git clone URL
-git log --stat					// stats about which files have changed in ea commit
-q								// quit, return to command line
-git diff						// diff between wrkng drctry files and staging area files
-git diff --staged				// diff between staging area files and repo files
-git diff commitIDx commitIDy
-git checkout commitIDy			// checkout previous commits if current head has a bug
-git checkout -b new_branch_name	// create a new branch
-git --version					// better to be >= 1.8
