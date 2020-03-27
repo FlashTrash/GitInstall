@@ -59,18 +59,18 @@ git-prompt.sh
 # Enter this command to make sublime the editor for commits:
 git config --global core.editor "'C:/Program Files/Sublime Text 3/sublime_text.exe' -n -w"
 
+# Enter this command to resolve conflict between LF and CRLF.
+# Pressing enter indicates a new line. UNIX systems add one char - LF (Line Feed or \n).
+# Windows systems add 2 chars - CRLF (Carraige Return and Line Feed or \r\n).
+git config --global core.autocrlf true
+
 # TODO
 # Enter this command to
 git config --global push.default upstream
 
-# Enter this command to resolve conflict between LF and CRLF.
-# Pressing enter indicates a new line. UNIX systems add one char - LF (Line Feed or \n).
-# Windows systems add 2 chars - CRLF (Carraige Return and Line Feed or \r\n).
-git config --global merge.conflictstyle diff3
-
 # TODO
 # Enter this command to
-git config --global core.autocrlf true
+git config --global merge.conflictstyle diff3
 
 # Additional configurations:
 Click in the top left corner of Git Bash to open the Console Windows Porperties.
