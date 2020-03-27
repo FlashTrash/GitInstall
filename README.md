@@ -78,6 +78,35 @@ Click in the top left corner of Git Bash to open the Console Windows Porperties.
 		in Font changeto 18
 		in Options ensure Quick Edit Mode is enabled
 
-
 # Close and reopen Git Bash for changes to take effect.
+
+# Connecting to GitHub with SSH
+# https://help.github.com/en/github/authenticating-to-github/checking-for-existing-ssh-keys
+
+# Check for existing SSH keys:
+ls -al ~/.ssh
+
+# If you don't have an existing public and private key pair, or don't wish to use any that are available to connect to GitHub, then generate a new SSH key:
+ssh-keygen -t rsa -b 4096 -C "twskinner@pm.me"
+	Enter a file to save the key (use the generated file)
+		Enter a passphrase (save it somewhere secure!)
+
+# Add SSH key to the ssh-agent
+# Ensure the ssh-agent is running
+# Start the ssh-agent in the background:
+eval $(ssh-agent -s)
+
+# Add SSH private key to the ssh-agent:
+ssh-add ~/.ssh/id_rsa
+
+# Add SSH key to GitHub Account
+# Copy SSH key to clipboard
+clip < ~/.ssh/id_rsa.pub
+	In the upper-right corner of any GitHub page, click your profile photo, then click Settings.
+		In the user settings sidebar, click SSH and GPG keys.
+			Click New SSH key.
+				In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal Mac, you might call this key "Personal MacBook Air".
+					Paste your key into the "Key" field.
+						Click Add SSH key.
+
 
