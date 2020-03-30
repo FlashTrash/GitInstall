@@ -34,7 +34,15 @@ git branch -d branchName		// delete branch label (not branch commits)
 git merge --abort
 git gc							// garbage collection collects unreachable commits
 
-git push
+git remote -v
+git remote add origin https://github.com/FlashTrash/...
+git push origin localBranchName(master)
+git pull origin master	// fetches and merges origin
+git fetch origin
+git diff origin/master master
+git merge master origin/master
+
+git clone https://github.com/ ...
 
 git reset --hard				// discard any chnges in either wrkng dir or staging area
 
