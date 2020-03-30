@@ -34,6 +34,8 @@ git branch -d branchName		// delete branch label (not branch commits)
 git merge --abort
 git gc							// garbage collection collects unreachable commits
 
+git push
+
 git reset --hard				// discard any chnges in either wrkng dir or staging area
 
 git --version					// better to be >= 1.8
