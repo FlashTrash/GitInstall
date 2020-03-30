@@ -17,4 +17,4 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 export PS1="$lightPurple\u$lightGreen\$(__git_ps1)$lightBlue \W $ $reset"
 
 # Make Sublime default text editor
-alias subl="C:/Program Files/Sublime Text 3/sublime_text.exe"
+alias subl="C:/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"
